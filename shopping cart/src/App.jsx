@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { Products } from "./components/Products";
-import productsData from "./mocks/products.json";
+import { products as initialProducts } from "./mocks/products.jsx";
 
 function App() {
+  const [products] = useState(initialProducts)
   return (
-    <Products products={productsData.products} />
+    <Products products={products} />
   );
 }
 
