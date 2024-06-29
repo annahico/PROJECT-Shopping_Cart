@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Header } from './components/Header.jsx';
 import { Products } from "./components/Products";
 import { products as initialProducts } from "./mocks/products.json";
 
