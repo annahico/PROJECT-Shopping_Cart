@@ -15,7 +15,11 @@ const handleChangeMinPrice = (event) => {
     }))
 }
 
+
 const handleChangeCategory = (event) => {
+    //algo huele MAL
+//estamos pasando la función de actualizar estado
+    //nativa de React a un componente hijo
     onChange(prevState => ({
         ...prevState,
         category: event.target.value
