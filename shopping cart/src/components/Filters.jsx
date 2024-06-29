@@ -7,7 +7,19 @@ export function Filters () {
 
 
 const handleChangeMinPrice = (event) => {
+    //algo huele MAL porque hay DOS fuentes de la verdad y hay que arreglarlo
     setMinPrice(event.target.value)
+    onChange(prevState => ({
+        ...prevState,
+        minPrice: event.target.value
+    }))
+}
+
+const handleChangeCategory = (event) => {
+    onChange(prevState => ({
+        ...prevState,
+        category: event.target.value
+    }))
 }
 
 return (
@@ -28,7 +40,7 @@ return (
 
             <div>
             <label htmlFor="category">Category</label>
-            <select id='category'>
+            <select id='category' onChange={handleChangeCategory}>
                 <option value='all'>Todas</option>
                 <option value='laptops'>Portátiles</option>
                 <option value='smartphones'>Celulares</option>
