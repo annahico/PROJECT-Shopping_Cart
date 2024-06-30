@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Footer } from "./components/Footer.jsx";
 import { Header } from './components/Header.jsx';
 import { Products } from "./components/Products";
+import { IS_DEVELOPMENT } from "./config.js";
 import { products as initialProducts } from "./mocks/products.json";
 
 function useFilters () {
@@ -36,9 +38,9 @@ function App() {
     <>
       <Header changeFilters={setFilters}/>
       <Products products={filteredProducts} />
-      <Footer></Footer>
+      { IS_DEVELOPMENT && <Footer filters={filters} />}
     </>
   )
 }
 
-export default App;
+export default App
