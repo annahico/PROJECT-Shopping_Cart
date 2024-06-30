@@ -1,18 +1,15 @@
-import { useState } from "react";
-import { Footer } from "./components/Footer.jsx";
-import { Header } from './components/Header.jsx';
-import { Products } from "./components/Products";
-import { IS_DEVELOPMENT } from "./config.js";
-import { products as initialProducts } from "./mocks/products.json";
+import { Footer } from './components/Footer.jsx'
+import { Header } from './components/Header.jsx'
+import { Products } from './components/Products.jsx'
+import { IS_DEVELOPMENT } from './config.js'
+import { useFilters } from './hooks/useFilters.js'
+import { products as initialProducts } from './mocks/products.json'
 
 function useFilters () {
-// State for products and filters
-  const [filters, setFilters] = useState({
-    category: 'all', // Filter by category
-    minPrice: 0, // Filter by minimum price
-  })
 
-  // Function to filter products based on selected filters
+  const {filters, setFilters} = useContext(FiltersContext)
+
+
   const filterProducts = (products) => {
     return products.filter(product => {
       return (
