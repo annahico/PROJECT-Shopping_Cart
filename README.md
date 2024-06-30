@@ -21,6 +21,7 @@ Haz uso de useContext para evitar pasar props innecesarias. ✔️​
 - Guarda en un localStorage el carrito para que se recupere al recargar la página ✔️​
 
 (proyecto desarrollado gracias a @midudev)
+🔴​ products.json NO funciona debido a que han cambiado el dominio, cuando lo solucionen fixearé el error)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -43,3 +44,4 @@ Make use of useContext to avoid passing unnecessary props. ✔️​
 - Save the cart in a localStorage so that it is recovered when the page is reloaded ✔️​
 
 (project developed thanks to @midudev)
+🔴​ products.json does NOT work because they have changed the domain, when they solve it I will fix the error)
