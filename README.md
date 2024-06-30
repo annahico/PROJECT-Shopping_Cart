@@ -1,7 +1,5 @@
 CAST / ENG
 
-
-
 # Enunciado
 
 1. Ecommerce
@@ -23,9 +21,9 @@ Haz uso de useContext para evitar pasar props innecesarias. ✔️​
 <p>(proyecto desarrollado gracias a @midudev)</p>
 <p>🔴​ products.json NO funciona debido a que han cambiado el dominio, cuando lo solucionen fixearé el error) </p>
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
-  # Statement
+# Statement
 
 1. Ecommerce
 
